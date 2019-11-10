@@ -1,5 +1,9 @@
 *.o
 *.exe
 main
+<<<<<<< HEAD
 main.exe.stackdump
 
+=======
+*.pro.user
+>>>>>>> c7f9d6af1bdff024ea0b8acfcad520e75ea32d39
