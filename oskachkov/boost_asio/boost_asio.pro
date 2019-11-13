@@ -12,6 +12,7 @@ SUBDIRS += \
     web-client \
     time_server \
     time_client \
-    c_server
+    c_server \
+    serial_v2
 
 DEPENDPATH += variant

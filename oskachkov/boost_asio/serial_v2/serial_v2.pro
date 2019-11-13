@@ -3,7 +3,11 @@ CONFIG += console c++11
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    searchdev.cpp
+
+HEADERS += \
+    searchdev.h
 
 BOOST_DIR="C:/Boost"
 
