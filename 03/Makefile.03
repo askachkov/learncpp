@@ -1,0 +1,22 @@
+TARGET=app.exe
+
+INC_DIR=inc
+SRC_DIR=src
+OBJ_DIR=build
+
+all: create-dirs $(TARGET)
+
+$(TARGET):
+	@echo Compiling....
+	cl /EHsc /Fe$(TARGET) /I$(INC_DIR) $(SRC_DIR)/*.cpp
+	copy *.obj $(OBJ_DIR)
+	del *.obj
+
+clean:
+	@echo Clining....
+	@if exist $(OBJ_DIR) rmdir /S /Q $(OBJ_DIR)
+	@if exist $(TARGET) del $(TARGET)
+
+create-dirs:
+	@if not exist $(OBJ_DIR) mkdir $(OBJ_DIR)
+	

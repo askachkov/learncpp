@@ -1,0 +1,9 @@
+REM Clining...
+nmake -f Makefile.03 clean
+
+REM Compiling...
+nmake -f Makefile.03
+
+REM Running....
+app.exe
+pause

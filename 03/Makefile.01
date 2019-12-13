@@ -1,0 +1,14 @@
+all: main.obj Calc.obj
+	link /OUT:app.exe main.obj Calc.obj
+
+clean:
+	del *.obj
+
+clean-all: clean
+	del *.exe
+
+main.obj: main.cpp
+	cl -EHsc -c main.cpp
+
+Calc.obj: Calc.cpp
+	cl -EHsc -c Calc.cpp
